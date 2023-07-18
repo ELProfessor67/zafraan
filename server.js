@@ -46,3 +46,5 @@ EventsEmitter.on('update-order',({order}) => {
 EventsEmitter.on('new-order',(order) => {
     io.to('zafrannowneradmin').emit('new-order',{order});
 });
+
+ // "mongoose": "^7.3.4",
