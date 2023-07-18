@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 import validator from "validator";
-import { User } from "./User.js";
+import { User } from "./zuser.js";
 
 const schema = new mongoose.Schema({
   phone: {
