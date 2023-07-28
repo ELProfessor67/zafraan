@@ -11,7 +11,7 @@ const schema = new mongoose.Schema({
     },
     category: {
         type: String,
-        enum: ['southern_fried_chicken','chicken','wings','kebabs','kebab_box','hoagie']
+        // enum: ['southern_fried_chicken','chicken','wings','kebabs','kebab_box','hoagie']
     },
     size: {
         type: String,

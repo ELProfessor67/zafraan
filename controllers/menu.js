@@ -78,7 +78,9 @@ export const deleteFood = catchAsyncError(async (req,res,next) => {
 });
 
 export const getMenu = catchAsyncError(async (req, res, next) => {
-    const menu = await Menu.find();
+    const {category} = req.query;
+    const filter = category ? {category} : {}
+    const menu = await Menu.find(filter);
     res.status(200).json({menu});
 });
 
